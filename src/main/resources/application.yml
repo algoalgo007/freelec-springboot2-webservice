@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: freelec-springboot3-webservice
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+  h2:
+    console:
+      path: /h2-console
+  logging:
+    level:
+      org.hibernate.orm.jdbc.bind: trace
+  profiles:
+    include: oauth
+  session:
+    store-type: jdbc
