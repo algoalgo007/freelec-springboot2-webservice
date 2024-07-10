@@ -19,8 +19,6 @@ spring:
   logging:
     level:
       org.hibernate.orm.jdbc.bind: trace
-  profiles:
-    include: oauth
   session:
     store-type: jdbc
   pid:
