@@ -4,6 +4,6 @@ spring:
   jpa:
     properties:
       hibernate:
-        dialect: MySQL8Dialect
+        dialect: MySQLDialect
   session:
     store-type: jdbc
