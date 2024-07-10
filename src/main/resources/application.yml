@@ -23,3 +23,5 @@ spring:
     include: oauth
   session:
     store-type: jdbc
+  pid:
+    file: /home/ec2-user/app/step2/freelec-springboot3-webservice.pid
