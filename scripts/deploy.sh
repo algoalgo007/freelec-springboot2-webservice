@@ -29,8 +29,8 @@ chmod +x $JAR_NAME
 
 # 설정 파일들에 대한 권한 추가
 echo "> 설정 파일들에 대한 읽기 권한 추가"
-chmod 644 /home/ec2-user/app/application-oauth.yml
-chmod 644 /home/ec2-user/app/application-real-db.yml
+chmod +x /home/ec2-user/app/application-oauth.yml
+chmod +x /home/ec2-user/app/application-real-db.yml
 
 echo "> $JAR_NAME 실행"
 nohup java -jar \
